@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('/fonts/Norse-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amble';
+    src: url('/fonts/Amble-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: Amble;
+    margin: 0px;
+}
+
+a{
+    color: inherit;
+    
+}
+
+.screen{
+    display: flex;
+}
+
+.side{
+    font-family: Norse;
+    height: 100vh;
+    width: 30%;
+    background-image: url('/photos/leaf.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.hero-caption{
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    --logo-size: 150px;
+    position: relative;
+    top: 200px;
+}
+
+.leaf-logo{  
+    height: var(--logo-size);
+}
+
+.hero-caption span {
+    font-size: var(--logo-size);      
+}
+
+figcaption {
+    position: absolute;
+    bottom: 1.5%;
+    width: 100%;
+    padding: 10px ;
+    text-align: center;
+    font-size: 1.5rem;
+}
