@@ -15,11 +15,11 @@
 body{
     font-family: Amble;
     margin: 0px;
+    padding: 0px;
 }
 
 a{
     color: inherit;
-    
 }
 
 .screen{
@@ -29,18 +29,20 @@ a{
 .side{
     font-family: Norse;
     height: 100vh;
-    width: 30%;
+    width: 60%;
     background-image: url('/photos/leaf.avif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     color: white;
 }
 
 .hero-caption{
-    background-color: rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
     font-size: 1em;
     display: flex;
@@ -48,7 +50,8 @@ a{
     padding: 10px;
     --logo-size: 150px;
     position: relative;
-    top: 200px;
+    /* top: 20%;  */
+    top: 20vh;
 }
 
 .leaf-logo{  
@@ -65,5 +68,36 @@ figcaption {
     width: 100%;
     padding: 10px ;
     text-align: center;
+    font-size: 1rem;
+}
+
+/* Main Section */
+ 
+.main-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #FBFCF8;
     font-size: 1.5rem;
+}
+
+.main-section > div{
+    box-sizing: border-box;
+    padding: 50px 400px 20px 100px;
+}
+
+.main-section .signup-header{
+    line-height: 2rem;
+    height: calc(20vh + 170px); 
+}
+
+
+.main-section .signup-form{
+    padding-top: 10px;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-section .singup-form .input{
+    display: flex;
+    flex-direction: column;
 }
