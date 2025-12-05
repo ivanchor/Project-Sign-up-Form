@@ -146,9 +146,13 @@ label{
     outline: none;
     box-shadow: none;
     border-radius: 5px;
-    border-style: none;
+    border-style: solid;
     width: 200px;
     height: 50px;
+}
+
+.create-account:active{
+    background-color: #218838; 
 }
 
 .log-in{
