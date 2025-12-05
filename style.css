@@ -140,3 +140,17 @@ label{
 
 /* Sign in */
 
+.create-account{
+    background-color: green;
+    color: white;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+    border-style: none;
+    width: 200px;
+    height: 50px;
+}
+
+.log-in{
+    color: green;
+}
