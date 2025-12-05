@@ -51,7 +51,7 @@ a{
     --logo-size: 150px;
     position: relative;
     /* top: 20%;  */
-    top: 20vh;
+    top: 15vh;
 }
 
 .leaf-logo{  
@@ -82,12 +82,12 @@ figcaption {
 
 .main-section > div{
     box-sizing: border-box;
-    padding: 50px 400px 20px 100px;
+    padding: 50px 300px 20px 100px;
 }
 
 .main-section .signup-header{
     line-height: 2rem;
-    height: calc(20vh + 170px); 
+    height: calc(15vh + 170px); 
 }
 
 
@@ -96,8 +96,44 @@ figcaption {
     background-color: white;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
-
-.main-section .singup-form .input{
+ 
+form{
     display: flex;
     flex-direction: column;
+    gap: 10px
+}
+
+.main-section .signup-form .input-section{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+} 
+
+.main-section .signup-form .input{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input{
+    height: 20px;
+    border-color: #E5E7EB;
+    outline: none;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: none;
+}
+
+input:focus{
+    border-color: blue;
+    outline: none;
+    box-shadow: none;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+label{
+    font-size: 1rem;
 }
